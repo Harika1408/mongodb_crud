@@ -8,7 +8,7 @@ const Brand=require('./models/Brand');
 const app=express()
 const port=3000;
 //connecting mongodb,where connect is a function
-mongoose.connect('mongodb://localhost:27017/branddb').then 
+mongoose.connect('mongodb+srv://kosuriharika:hari1408@cluster0.36qad.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then 
  (()=>console.log('connected to mongodb'))
  .catch(err=>console.error('error connectingto mongodb',err));
  //middleware 
